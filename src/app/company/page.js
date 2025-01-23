@@ -1,4 +1,5 @@
 import Header from '@/components/header'
+import Image from 'next/image'
 import React from 'react'
 
 function page() {
@@ -10,16 +11,32 @@ function page() {
         {/* Pack Options */}
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Pack Options</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-            <div className="bg-white p-6 shadow-lg rounded-lg">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 w-['160px'] h-['160px']">
+            <div className="bg-white p-6 shadow-lg rounded-lg flex justify-between items-center">
+               <Image
+                    src="/images/ovacadoinbox.png" // Ensure this path is correct
+                    alt="Fresh Avocado"
+                    width={160}
+                    height={160}
+                    objectFit="contain" // This ensures the image covers the div properly
+                  />
+              <span className='flex flex-col justify-center items-center'>
               <h3 className="text-xl font-bold mb-2">100mm Trays</h3>
               <p>Neatly packed into lined trays with sizes ranging from count 14 to 30.</p>
+              </span>
             </div>
-            <div className="bg-white p-6 shadow-lg rounded-lg">
+       <div className="bg-white p-6 shadow-lg rounded-lg flex justify-between items-center">
+               <Image
+                    src="/images/ovacadoinbox.png" // Ensure this path is correct
+                    alt="Fresh Avocado"
+                    width={160}
+                    height={160}
+                    objectFit="contain" // This ensures the image covers the div properly
+                  />
+              <span className='flex flex-col justify-center items-start'>
               <h3 className="text-xl font-bold mb-2">156mm Bulk</h3>
-              <p>
-                Rumble fill boxes approximately 10kg, perfect for everyday use and food service.
-              </p>
+              <p>Rumble ll boxes approximately 10kg</p>
+              </span>
             </div>
           </div>
         </section>
@@ -30,11 +47,29 @@ function page() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             <div className="bg-white p-6 shadow-lg rounded-lg">
               <h3 className="text-xl font-bold mb-2">Class 1</h3>
+              <span className='flex justify-between items-center'>
+                   <Image
+                        src="/images/avofruit.png" // Ensure this path is correct
+                        alt="Fresh Avocado"
+                        width={60}
+                        height={60}
+                        objectFit="contain" // This ensures the image covers the div properly
+                      />
               <p>Premium tasty class one avocados packed to high specifications.</p>
+              </span>
             </div>
             <div className="bg-white p-6 shadow-lg rounded-lg">
               <h3 className="text-xl font-bold mb-2">Food Service</h3>
+              <span className='flex justify-between items-center'>
+                 <Image
+                        src="/images/avofruit.png" // Ensure this path is correct
+                        alt="Fresh Avocado"
+                        width={60}
+                        height={60}
+                        objectFit="contain" // This ensures the image covers the div properly
+                      />
               <p>Perfect for restaurants, cafes, and hospitality use.</p>
+              </span>
             </div>
           </div>
         </section>
@@ -94,7 +129,7 @@ function page() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-green-100 p-6 rounded-lg">
+        <section className="bg-green-100 p-6 rounded-lg flex flex-col items-center">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="mb-2">The Hyatt, 2nd Floor, Suite No. 206, 207</p>
           <p className="mb-2">Lower Kabete Road, Westlands</p>
