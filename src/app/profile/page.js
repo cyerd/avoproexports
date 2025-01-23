@@ -12,6 +12,28 @@ export default function CompanyProfile() {
           motivated team, and stringent international quality systems, we’re dedicated
           to sustainability and community empowerment.
         </p>
+                <section className="flex flex-col justify-center items-center w-full">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Sustainability Initiatives</h2>
+        
+          <Image
+            src="/images/bgbanner.png"
+            alt="Sustainability Initiatives"
+            width={1400}
+            height={400}
+            objectFit="fit"
+            className="rounded-lg my-4"
+            objectPosition="center"
+            style={{
+        maxHeight: "300px",
+      }}
+          />
+          <p className="text-gray-700 font-bold text-lg italic py-5">
+            Our sustainability practices include organic agriculture, waste management
+            through biogas generation, and water conservation efforts. We are committed
+            to reducing our environmental footprint and promoting eco-friendly practices.
+          </p>
+          
+        </section>
 
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">Our Mission</h2>
@@ -34,12 +56,13 @@ export default function CompanyProfile() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">Products</h2>
           <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-medium text-green-600">Avocado Products</h3>
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-medium text-green-600 text-center">Avocado Products</h3>
+              <div className="flex justify-around items-center ">
               <Image
-                src="/images/avocado-products.jpg"
+                src="/images/avocado-products.png"
                 alt="Avocado Products"
-                width={600}
+                width={400}
                 height={400}
                 className="rounded-lg my-4"
               />
@@ -50,14 +73,16 @@ export default function CompanyProfile() {
                 <li>Spray Oil: Convenient for cooking and baking.</li>
                 <li>Fresh Avocados: Handpicked for maximum freshness and flavor.</li>
               </ul>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-medium text-green-600">Macadamia Products</h3>
+            <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-medium text-green-600 text-center">Macadamia Products</h3>
+              <div className="flex justify-evenly items-center">
               <Image
-                src="/images/macadamia-products.jpg"
+                src="/images/macadamia-products.png"
                 alt="Macadamia Products"
-                width={600}
+                width={400}
                 height={400}
                 className="rounded-lg my-4"
               />
@@ -66,45 +91,34 @@ export default function CompanyProfile() {
                 <li>Organic Oil: Premium, ideal for culinary and cosmetic uses.</li>
                 <li>Refined Oil: Pure, versatile for cooking and cosmetics.</li>
               </ul>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-xl font-medium text-green-600">Mango Products</h3>
+             <div className="border border-gray-200 rounded-lg p-5">
+              <h3 className="text-xl font-medium text-green-600 text-center">Mango Products</h3>
+              <div className="flex justify-evenly items-center">
               <Image
-                src="/images/mango-products.jpg"
+                src="/images/mango-products.png"
                 alt="Mango Products"
-                width={600}
+                width={400}
                 height={400}
                 className="rounded-lg my-4"
               />
-              <ul className="list-disc list-inside text-gray-700">
+              <ul className="list-disc list-inside text-gray-700 ">
                 <li>Fresh Mangoes: Juicy and perfect for direct consumption.</li>
                 <li>Mango Pulp: Retains natural flavor, great for juices and desserts.</li>
                 <li>Dried Mango Slices: Healthy and tasty snack option.</li>
               </ul>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-2">Sustainability Initiatives</h2>
-          <Image
-            src="/images/sustainability.jpg"
-            alt="Sustainability Initiatives"
-            width={600}
-            height={400}
-            className="rounded-lg my-4"
-          />
-          <p className="text-gray-700">
-            Our sustainability practices include organic agriculture, waste management
-            through biogas generation, and water conservation efforts. We are committed
-            to reducing our environmental footprint and promoting eco-friendly practices.
-          </p>
-        </section>
 
-        <section className="mb-8">
+
+        <section className="mb-8 flex flex-col justify-center items-center bg-green-100 p-5 round-lg">
           <h2 className="text-2xl font-semibold text-gray-800 mb-2">Contact Us</h2>
-          <ul className="text-gray-700">
+          <ul className="text-gray-900">
             <li>
               <span className="font-medium">CEO:</span> Mohamud Abdullahi Keyse -
               <a

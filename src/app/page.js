@@ -1,26 +1,63 @@
+"use client"
+
 import Background from "@/components/Background";
+import Footer from "@/components/Footer";
 import Header from "@/components/header";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+  const disableRightClick = (e) => e.preventDefault();
+    const disableShortcuts = (e) => {
+    if (e.ctrlKey && ["u", "i", "j", "s"].includes(e.key.toLowerCase())) {
+      e.preventDefault();
+    }
+    if (e.keyCode === 123) { // F12
+      e.preventDefault();
+    }
+  };
+  document.addEventListener("keydown", disableShortcuts);
+  document.addEventListener("contextmenu", disableRightClick);
+  return () => {
+    document.removeEventListener("contextmenu", disableRightClick),
+    document.removeEventListener("keydown", disableShortcuts)
+  }
+}, []);
   return (
     
   <div className="min-h-full">
-    {/* <Header/> */}
-  <div className="container mx-auto px-4 py-8">
-    <h1 className="text-4xl font-bold text-green-500 uppercase  mb-2">PURE PREMIUM ORGANIC AVOCADO OIL</h1>
-    <h3 className="text-2xl font-bold text-green-300 uppercase italic mb-4">Crafted for Global Excellence</h3>
-    <span className="text-gray-700 leading-relaxed mb-8 w-full xl:w-[50%] text-xl italic font-semibold ">
-      Avopro Kenya Ltd. has established a strongmarket presence both locally and internationally. The company ensures that its avocado 
+    <Header/>
+  <div >
+    <section  className="flex flex-col justify-center items-center"
+      style={{
+          height: "100vh",
+          backgroundImage: "url('/images/bgbanner.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          color: "white",
+          textAlign: "center",
+        }}
+        >
+          <div className="bg-green-100 p-3 rounded-xl text-wrap opacity-75">
+    <h1 className="text-4xl font-bold text-green-800 uppercase  m-2">PURE PREMIUM ORGANIC AVOCADO OIL</h1>
+    <h3 className="text-2xl font-bold text-black text-opacity-100 m-2 lg:mx-[25%] rounded-xl bg-white uppercase italic mb-4">Crafted for Global Excellence</h3>
+    <span className="text-gray-800 leading-relaxed mb-8 px-10 w-full xl:w-[50%] text-xl italic font-semibold ">
+      Avopro Kenya Ltd. has established a strongmarket presence both locally and internationally.<br/> The company ensures that its avocado 
       oil reaches wide range of consumers through:<br />
-      <p className="font-bold text-green-700">Retail Outlets:</p> Available in supermarkets and specialty health food stores across Kenya 
+      <p className="font-bold mt-8 text-green-800">Retail Outlets:</p> Available in supermarkets and specialty health food stores across Kenya 
       and other countries.<br />
-      <p className="font-bold text-green-700">Online Sales:</p> Customers can purchase the oil directly from Avopro Kenya Ltd.’s 
+      <p className="font-bold text-green-800">Online Sales:</p> Customers can purchase the oil directly from Avopro Kenya Ltd.’s 
       website or other e-commerce platforms.<br />
-      <p className="font-bold text-green-700">Bulk Supply:</p> 
+      <p className="font-bold text-green-800">Bulk Supply:</p> 
       The company also caters to restaurants, hotels, 
       and food manufacturers needing high-quality avocado oil in larger quantities.
     </span>
+    </div>
+    </section>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 mt-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         <div className="rounded-lg shadow-lg p-6 bg-white">
@@ -69,6 +106,7 @@ export default function Home() {
       </div>
     </div>
   </div>
+  <Footer/>
 </div>
 
   );

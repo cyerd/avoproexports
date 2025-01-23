@@ -4,11 +4,28 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'example.com', // Replace with the external image's domain
+        hostname: 'unsplash.com', // Replace with the external image's domain
         port: '',
         pathname: '/**',
       },
     ],
+  },
+   async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+          // {
+          //   key: "Content-Security-Policy",
+          //   value: "default-src 'self'; script-src 'self'; style-src 'self';",
+          // },
+        ],
+      },
+    ];
   },
 };
 

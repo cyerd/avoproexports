@@ -13,15 +13,12 @@ import {
   PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
+  ChatBubbleBottomCenterIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
+import Image from 'next/image'
 
 const products = [
   { 
@@ -56,8 +53,8 @@ const products = [
   }
 ];
 const callsToAction = [
-  { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '#', icon: PhoneIcon },
+  { name: 'WhatsApp', href: 'https://wa.me/+254746445445', icon: ChatBubbleBottomCenterIcon },
+  { name: 'Contact sales', href: 'mailto:info@avoprokenya.com', icon: PhoneIcon },
 ]
 
 export default function Header() {
@@ -103,8 +100,14 @@ export default function Header() {
                     key={item.name}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
                   >
-                    <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
-                      <item.icon aria-hidden="true" className="size-6 text-gray-600 group-hover:text-indigo-600" />
+                    <div key={item.name} className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                        <Image
+                            src={item.icon} // Ensure this path is correct
+                            alt="Fresh Avocado"
+                            width={60}
+                            height={60}
+                            objectFit="contain" // This ensures the image covers the div properly
+                          />
                     </div>
                     <div className="flex-auto">
                       <a href={item.href} className="block font-semibold text-gray-900">
@@ -123,7 +126,7 @@ export default function Header() {
                     href={item.href}
                     className="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100"
                   >
-                    <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400" />
+                          <item.icon aria-hidden="true" className="size-5 flex-none text-gray-400" />
                     {item.name}
                   </a>
                 ))}
