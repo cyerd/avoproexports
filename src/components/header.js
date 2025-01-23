@@ -63,16 +63,20 @@ export default function Header() {
   return (
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
-          <a href="/" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
+        <a href="/" className="-m-1.5 p-1.5">
+        <div className="flex items-center lg:flex-1">
+          
+          <img
               alt=""
               src="./avopro expo/avofruit.png"
               className="h-12 w-auto"
-            />
-          </a>
+            />          
+            
+          
+          <span className="text-black text-xl font-bold font-serif px-2 ">AVOPRO EPZ LTD</span>
+          
         </div>
+        </a>
         <div className="flex lg:hidden">
           <button
             type="button"
