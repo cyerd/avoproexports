@@ -178,8 +178,8 @@ export default function Header() {
                     Product
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {[...products, ...callsToAction].map((item) => (
+                  <DisclosurePanel className="mt-2 space-y-2 bg-teal-100">
+                    {[...products].map((item) => (
                       <DisclosureButton
                         key={item.name}
                         as="a"

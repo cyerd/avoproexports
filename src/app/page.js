@@ -27,32 +27,26 @@ export default function Home() {
   return (
     
   <div className="min-h-full">
-    {/* <Header/> */}
+    <Header/>
   <div >
-    <section  className="flex flex-col justify-center items-center"
-      style={{
-          height: "100vh",
-          backgroundImage: "url('/images/bgbanner.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "white",
-          textAlign: "center",
-        }}
-        >
-          <div className="bg-green-100 p-3 rounded-xl text-wrap opacity-75">
-    <h1 className="text-4xl font-bold text-green-800 uppercase  m-2">PURE PREMIUM ORGANIC AVOCADO OIL</h1>
-    <h3 className="text-2xl font-bold text-black text-opacity-100 m-2 lg:mx-[25%] rounded-xl bg-white uppercase italic mb-4">Crafted for Global Excellence</h3>
-    <span className="text-gray-800 leading-relaxed mb-8 px-10 w-full xl:w-[50%] text-xl italic font-semibold ">
+    <section  className="flex flex-col justify-center items-center">
+    <Image src="/images/bgbanner.png" width={5188} height={220} className="rounded-xl" alt="banner image" style={{
+      maxHeight: 200,
+      objectFit: "cover",
+      objectPosition: "center",
+      
+    }} />
+    <div className=" items-center p-3 rounded-xl text-wrap opacity-75 text-center">
+    <h1 className="text-4xl font-bold text-green-800 uppercase text-center  m-2">PURE PREMIUM ORGANIC AVOCADO OIL</h1>
+    <h3 className="text-2xl font-bold text-black text-opacity-100 m-2 text-center  lg:mx-[25%] rounded-xl bg-white uppercase italic mb-4">Crafted for Global Excellence</h3>
+    <span className="text-gray-800 leading-relaxed mb-8 px-10 w-full text-center items-center  xl:w-[50%] text-xl italic font-semibold ">
       Avopro Kenya Ltd. has established a strongmarket presence both locally and internationally.<br/> The company ensures that its avocado 
       oil reaches wide range of consumers through:<br />
-      <p className="font-bold mt-8 text-green-800">Retail Outlets:</p> Available in supermarkets and specialty health food stores across Kenya 
+      <p className="font-bold mt-8 text-center  text-green-800">Retail Outlets:</p> Available in supermarkets and specialty health food stores across Kenya 
       and other countries.<br />
-      <p className="font-bold text-green-800">Online Sales:</p> Customers can purchase the oil directly from Avopro Kenya Ltd.’s 
+      <p className="font-bold text-center  text-green-800">Online Sales:</p> Customers can purchase the oil directly from Avopro Kenya Ltd.’s 
       website or other e-commerce platforms.<br />
-      <p className="font-bold text-green-800">Bulk Supply:</p> 
+      <p className="font-bold text-center  text-green-800">Bulk Supply:</p> 
       The company also caters to restaurants, hotels, 
       and food manufacturers needing high-quality avocado oil in larger quantities.
     </span>
@@ -95,12 +89,12 @@ export default function Home() {
           </ul>
         </div>
       </div>
-      <div className="inline-grid contain-content contain-inline-size justify-center  grid-cols-1 md:grid-cols-2 items-center" style={{backgroundImage: 'url("./avopro expo/organicoilpuring.png")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}>
-        <Image src="/images/avofruit.png" alt="ovacado" width={260} height={150} objectFit="cover" />
+      <div className="grid  grid-cols-2 items-center" style={{backgroundImage: 'url("/images/leavesbg.png")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}>
+        <Image src="/images/avofruit.png" alt="ovacado" width={260} height={150} objectFit="contain" />
          <Image src="/images/allpackaging.png" alt="ovacado" width={260} height={150} objectFit="cover" />
          <Image src="/images/ovacadooil.png" alt="ovacado" width={350} height={150} objectFit="cover" className="rounded-lg" />
          <Image src="/images/avocado_hummus1.png" alt="ovacado" width={350} height={150} objectFit="cover" className="rounded-lg" />
-     
+       
          
          
       </div>
