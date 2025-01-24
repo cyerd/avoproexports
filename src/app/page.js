@@ -92,8 +92,8 @@ export default function Home() {
       <div className="grid  grid-cols-2 items-center" style={{backgroundImage: 'url("/images/leavesbg.png")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}>
         <Image src="/images/avofruit.png" alt="ovacado" width={260} height={150} objectFit="contain" />
          <Image src="/images/allpackaging.png" alt="ovacado" width={260} height={150} objectFit="cover" />
+         <Image src="/images/ovacadoinbox.png" alt="ovacado" width={350} height={150} objectFit="cover" className="rounded-lg" />
          <Image src="/images/ovacadooil.png" alt="ovacado" width={350} height={150} objectFit="cover" className="rounded-lg" />
-         <Image src="/images/avocado_hummus1.png" alt="ovacado" width={350} height={150} objectFit="cover" className="rounded-lg" />
        
          
          

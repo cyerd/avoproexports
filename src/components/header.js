@@ -22,28 +22,28 @@ import Image from 'next/image'
 
 const products = [
   { 
-    name: 'Avocado Extra Virgin Oil', 
+    name: 'Extra Virgin Avocado  Oil', 
     description: 'Produced using the cold press method to ensure the highest quality. Rich in vitamins and antioxidants, ideal for culinary use and cosmetic applications.', 
     href: '#', 
-    icon: '/images/avocado-products.png' 
+    icon: '/images/EXTRA_VIRGIN1.png' 
   },
   { 
-    name: 'Avocado Organic Oil', 
+    name: 'Organic Avocado Oil ', 
     description: 'Certified organic, free from pesticides and synthetic fertilizers, retaining all natural goodness.', 
     href: '#', 
-    icon: '/images/avocado-products.png' 
+    icon: '/images/ORGANIC1.png' 
   },
   { 
     name: 'Avocado Crude Oil', 
     description: 'Minimally processed to maintain natural color and nutrients, ideal for industrial applications.', 
     href: '#', 
-    icon: '/images/avocado-products.png' 
+    icon: '/images/5ltroil1.png' 
   },
   { 
     name: 'Macadamia Kernels', 
     description: 'Rich, buttery flavor, perfect for snacking or as an ingredient in gourmet recipes.', 
     href: '#', 
-    icon: '/images/macadamia-products.png' 
+    icon: '/images/maca.png' 
   },
   { 
     name: 'Mango Pulp', 
@@ -53,7 +53,7 @@ const products = [
   }
 ];
 const callsToAction = [
-  { name: 'WhatsApp', href: 'https://wa.me/+254746445445', icon: ChatBubbleBottomCenterIcon },
+  { name: 'WhatsApp', href: 'https://wa.me/+254746446446', icon: ChatBubbleBottomCenterIcon },
   { name: 'Contact sales', href: 'mailto:info@avoprokenya.com', icon: PhoneIcon },
 ]
 
