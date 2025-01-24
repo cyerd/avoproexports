@@ -138,13 +138,13 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="features" className="text-sm/6 font-semibold text-gray-900">
             Features
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="marketplace" className="text-sm/6 font-semibold text-gray-900">
             Marketplace
           </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
+          <a href="company" className="text-sm/6 font-semibold text-gray-900">
             Company
           </a>
         </PopoverGroup>
@@ -192,19 +192,19 @@ export default function Header() {
                   </DisclosurePanel>
                 </Disclosure>
                 <a
-                  href="#"
+                  href="features"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Features
                 </a>
                 <a
-                  href="#"
+                  href="marketplace"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Marketplace
                 </a>
                 <a
-                  href="#"
+                  href="company"
                   className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
                   Company
