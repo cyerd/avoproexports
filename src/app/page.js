@@ -421,6 +421,15 @@ export default function Home() {
             </div>
           </div>
         </section>
+           <section id='contact' className="bg-green-100 p-6 rounded-lg flex flex-col items-center">
+          <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+          <p className="mb-2">The Hyatt, 2nd Floor, Suite No. 206, 207</p>
+          <p className="mb-2">Lower Kabete Road, Westlands</p>
+          <p className="mb-2">P.O. Box 8464-00610, Nairobi, Kenya</p>
+          <p className="mb-2">Phone: +254 746 446 446</p>
+          <p className="mb-2">Email: sales@avoprokenya.com | info@avoprokenya.com</p>
+          <p className="mb-2">Website: <a href="http://www.avoprokenya.com" className="text-green-700 underline">www.avoprokenya.com</a></p>
+        </section>
         </div>
       </main>
 

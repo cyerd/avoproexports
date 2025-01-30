@@ -61,9 +61,9 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-white">
+    <header className="bg-white sticky top-0 z-50">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <a href="#pharma" className="-m-1.5 p-1.5">
+        <a href="/" className="-m-1.5 p-1.5">
         <div className="flex items-center lg:flex-1">
           
           <img
@@ -146,6 +146,9 @@ export default function Header() {
           </a>
           <a href="#about" className="text-sm/6 font-semibold text-gray-900">
             About Us
+          </a>
+          <a href="#contact" className="text-sm/6 font-semibold text-gray-900">
+            Contact Us
           </a>
         </PopoverGroup>
       </nav>
