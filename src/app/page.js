@@ -2,6 +2,8 @@
 
 import Footer from '@/components/Footer';
 import Header from '@/components/header';
+import { GlobeAltIcon } from '@heroicons/react/20/solid';
+import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect } from 'react';
@@ -200,7 +202,7 @@ export default function Home() {
           </div>
         </section>
 
-                                       <section>
+           <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Farmers support Programs</h3>
             <Image src="/images/fieldtraining.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -210,33 +212,213 @@ export default function Home() {
           </div>
         </section>
 
+             <section>
+          <div className='bg-green-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Community Development</h3>
+            <Image src="/images/factory.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           Our collaboration with smallholder farmers fosters community development. By improving agricultural practices and increasing income levels, we contribute to the socio-economic growth of farming communities.
+            </p>
+          </div>
+        </section>
+
+        <span className='flex flex-col text-black font-serif p-5'>
+          <h3 className='font-bold text-3xl p-5'>
+            Quality Management System
+          </h3>
+          <p>
+            We maintain a rigorous quality management system that complies with both local and international food safety standards. Excellence drives our business, and we ensure it is ingrained in our culture.
+</p>
+         
+        </span>
+
+                     <section>
+          <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Quality Assuarance</h3>
+            <Image src="/images/avoteam2.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           Our quality assurance processes are designed to meet the highest industry standards. We conduct regular audits, implement stringent controls, and continuously monitor our operations to ensure product safety and quality.
+            </p>
+          </div>
+        </section>
+        
+                     <section>
+          <div className='bg-orange-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Continous Improvements</h3>
+            <Image src="/images/avo.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           We believe in continuous improvement. Our quality management team is dedicated to identifying areas for enhancement and implementing best practice to maintain our reputation for excellence.
+            </p>
+          </div>
+        </section>
+
+                             <section>
+          <div className='bg-blue-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Certification and Compliance</h3>
+            <Image src="/images/avo.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           Our quality management system is benchmarked to FSSC 22000 standards. We hold certifications that attest to our commitment to food safety and quality, reinforcing our credibility in the global market.
+            </p>
+          </div>
+        </section>
+
+           <section>
+          <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-2">Target Market</h3>
+            
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           Our target markets include the cosmetic, pharmaceutical, and food industries.
+            </p>
+          </div>
+        </section>
+
+                   <section id='cosmetic'>
+          <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Cosmetic Insutry</h3>
+            <Image src="/images/facemask.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-fill object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           Avocado oil is a sought-after ingredient in the cosmetic industry due to its moisturizing and anti-aging properties. Our high-quality oil is used in skincare and haircare products, enhancing their efficacy and appeal. 
+            </p>
+          </div>
+        </section>
+
+           <section id='pharma'>
+          <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Pharmaceutical Insutry</h3>
+            <Image src="/images/pharma.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           The pharmaceutical industry utilizes avocado oil for its health benefits. Our oil is used in formulations for supplements, topical treatments, and therapeutic products, contributing to health and wellness. 
+            </p>
+          </div>
+        </section>
+
+             <section id='food'>
+          <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Food Insutry</h3>
+            <Image src="/images/avocado_hummus.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           In the food industry, avocado oil is prized for its nutritional value and culinary versatility. Our oil is used in cooking, salad dressings, and health foods, offering a nutritious and flavorful alternative to conventional oils.
+            </p>
+          </div>
+        </section>
+
+          <section className="relative">
+          <Image
+          width={1920}
+          height={500}
+            src="/images/production.png" 
+            alt="Wide image of avocado oil" 
+            className="w-full h-[400px] object-cover"
+          />
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center">
+            <h2 className="text-5xl font-extrabold mb-4 font-serif">PROUDUCTION</h2>
+            <p className="text-2xl font-serif">Once the hand-picked mature avocados are delivered to the factory, they are naturally ripened. The avocado oil is mechanically extracted from the ripened fruits using the cold press method, ensuring the retention of all essential nutrients. Our extraction process is completely chemical and additive-free.</p>
+          </div>
+        </section>
+
+                     <section id='food'>
+          <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Cold Press Method</h3>
+            <Image src="/images/cold-press.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           The cold press method is a gentle extraction process that preserves the nutritional integrity and natural flavor of the avocado oil. This method ensures that our oil retains its health benefits, making it suitable for a variety of applications. 
+            </p>
+          </div>
+        </section>
+
+                          <section id='range'>
+          <div className='bg-green-100 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Product Range</h3>
+            <Image src="/images/allpackaging.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+           We offer both organic and conventional avocado oil, available as extra-virgin or crude. Our products cater to diverse market needs, from health-conscious consumers to industrial applications.
+            </p>
+          </div>
+        </section>
+
+          <section id='food'>
+          <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Reasearch and Development</h3>
+            <Image src="/images/research.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+          Our R&D team is continuously exploring new ways to enhance our production processes. Through innovation and technology, we aim to improve efficiency, reduce waste, and develop new product formulations.
+            </p>
+          </div>
+        </section>
+
+           <section id='food'>
+          <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Packaging</h3>
+            <div className='flex'>
+            <span className='text-center items-center flex flex-col'>
+              <li>Flex tank (22,000kg)</li>
+               <li>Intermediate Bulk Containers (IBC, 1000kg)</li>
+                <li>Food-grade steel barrels (200kg)</li>
+                <li>Retail bottles</li>
+            </span>
+            <Image src="/images/storagetypes.png" width={200} height={200} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+           </div>
+           <h3 className="text-3xl font-bold text-center my-2 ">Custom Packaging</h3>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-2">
+          We understand that different markets have different packaging requirements. Therefore, we offer custom packaging solutions to meet specific customer demands, ensuring convenience and satisfaction. 
+            </p>
+            <h3 className="text-3xl font-bold text-center my-2 ">Sustainable Packaging</h3>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-2">
+         Our commitment to sustainability extends to our packaging choices. We prioritize eco-friendly materials and practices, reducing our environmental impact and promoting a circular economy.  
+            </p>
+          </div>
+        </section>
+
+                  <section id='food'>
+          <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
+            <h3 className="text-3xl font-bold text-center mb-8">Sustainability</h3>
+            <Image src="/images/research.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
+          As a business, we appreciate that natural resources are limited, and we consider future generations in all our decisions. Adoption of organic agriculture for our contracted farmers is one such decision. 
+            </p>
+          </div>
+        </section>
+
         {/* Contact Section */}
-        <section id="contact" className="py-16">
+        <section id="contact" className="py-16 flex justify-center flex-col items-center text-center">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">Contact Us</h3>
-            <form className="max-w-lg mx-auto space-y-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full p-4 border border-gray-300 rounded-lg"
-              />
-              <input
-                type="email"
-                placeholder="Your Email"
-                className="w-full p-4 border border-gray-300 rounded-lg"
-              />
-              <textarea
-                placeholder="Your Message"
-                className="w-full p-4 border border-gray-300 rounded-lg"
-                rows="4"
-              ></textarea>
-              <button
-                type="submit"
-                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700"
-              >
-                Send Message
-              </button>
-            </form>
+            <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">Excecutive Board</h3>
+            <div className='border p-2 bg-white'>
+              <span className='border'>
+                <p className='text-xl'>Mohamud Abdullahi Keyse - CEO and President</p>
+                <span className='flex justify-evenly flex-col items-center'>
+                  <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 pl-2' href="mailto:mkeyse@avoprokenya.com">mkeyse@avoprokenya.com</a></p>
+                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-9' href="tel:+254743443443">+254 7 43 443 443</a></p>
+                </span>
+              </span>
+            </div>
+ <div className='border p-2 bg-white'>
+              <span className='border'>
+                <p className='text-xl'>Ahmed Abdullahi Mohamed - Director of Operations</p>
+                <span className='flex justify-evenly flex-col items-center'>
+                  <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 ' href="mailto:ahmedmohamed@avoprokenya.com">ahmedmohamed@avoprokenya.com </a></p>
+                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-16' href="tel:+254740440450">+254 7 40 440 450</a></p>
+                </span>
+              </span>
+            </div>
+             <div className='border p-2 bg-white'>
+              <span className='border'>
+                <p className='text-xl'>Muhiyadin Qassim - Director of Business Development and Sales </p>
+                <span className='flex justify-evenly flex-col items-center'>
+                  <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 ' href="mailto:mqassim@avoprokenya.com">mqassim@avoprokenya.com  </a></p>
+                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-10' href="tel:+254740441441">+254 7 40 441 441</a></p>
+                </span>
+              </span>
+            </div>
+                <div className='border p-2 bg-white'>
+              <span className='border'>
+                <p className='text-xl'>Mohamed Abdulla hi Keyse - Senior Vice President</p>
+                <span className='flex justify-evenly flex-col items-center'>
+                  <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 ' href="mailto:keyse.l@avoprokenya.com">keyse.l@avoprokenya.com</a></p>
+                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-9' href="tel:+254740777111">+254 740 777 111</a></p>
+                </span>
+              </span>
+            </div>
           </div>
         </section>
         </div>

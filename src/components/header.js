@@ -42,7 +42,7 @@ const products = [
   { 
     name: 'Macadamia Kernels', 
     description: 'Rich, buttery flavor, perfect for snacking or as an ingredient in gourmet recipes.', 
-    href: '#', 
+    href: '#parma', 
     icon: '/images/maca.png' 
   },
   { 
@@ -63,7 +63,7 @@ export default function Header() {
   return (
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <a href="/" className="-m-1.5 p-1.5">
+        <a href="#pharma" className="-m-1.5 p-1.5">
         <div className="flex items-center lg:flex-1">
           
           <img
@@ -77,7 +77,7 @@ export default function Header() {
           
         </div>
         </a>
-        <div className="flex lg:hidden">
+        {/* <div className="flex lg:hidden">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
@@ -86,7 +86,7 @@ export default function Header() {
             <span className="sr-only">Open main menu</span>
             <Bars3Icon aria-hidden="true" className="size-6" />
           </button>
-        </div>
+        </div> */}
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
@@ -144,8 +144,8 @@ export default function Header() {
           <a href="marketplace" className="text-sm/6 font-semibold text-gray-900">
             Marketplace
           </a>
-          <a href="company" className="text-sm/6 font-semibold text-gray-900">
-            Company
+          <a href="#about" className="text-sm/6 font-semibold text-gray-900">
+            About Us
           </a>
         </PopoverGroup>
       </nav>
