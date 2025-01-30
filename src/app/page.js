@@ -90,7 +90,7 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="bg-gray-200 py-16">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-center mb-8">About Us</h3>
+            <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">About Us</h3>
             <p className="text-center text-black max-w-2xl mx-auto font-serif">
               Avopro EPZ Ltd is a premier company registered and domiciled in Kenya, specializing in the extraction and marketing of high-quality avocado oil. We pride ourselves on utilizing state-of-the-art processing machinery, and employing a well-trained, highly motivated team. Our operations are governed by stringent international quality management systems. We have a robust smallholder farmers’ program that guarantees a consistent and sustainable supply of avocados, reinforcing our commitment to community and environmental stewardship. 
             </p>
@@ -213,7 +213,7 @@ export default function Home() {
         {/* Contact Section */}
         <section id="contact" className="py-16">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-center mb-8">Contact Us</h3>
+            <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">Contact Us</h3>
             <form className="max-w-lg mx-auto space-y-6">
               <input
                 type="text"
