@@ -138,11 +138,11 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="features" className="text-sm/6 font-semibold text-gray-900">
-            Features
+          <a href="#innovations" className="text-sm/6 font-semibold text-gray-900">
+            Innovations
           </a>
-          <a href="marketplace" className="text-sm/6 font-semibold text-gray-900">
-            Marketplace
+          <a href="#team" className="text-sm/6 font-semibold text-gray-900">
+           Our Team
           </a>
           <a href="#about" className="text-sm/6 font-semibold text-gray-900">
             About Us

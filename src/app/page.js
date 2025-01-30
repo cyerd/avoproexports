@@ -126,7 +126,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section>
+          <section id='team'>
           <div className='bg-green-100 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Our Team</h3>
             <Image src="/images/team.jpg" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -163,7 +163,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-                   <section>
+                   <section id='innovations'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Innovation and Excellence</h3>
             <Image src="/images/innovation.jpg" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -192,7 +192,7 @@ export default function Home() {
           </div>
         </section>
 
-                                     <section>
+          <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Sustainable Farming Practices</h3>
             <Image src="/images/fieldprunning.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
