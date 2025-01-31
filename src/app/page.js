@@ -21,6 +21,7 @@ export default function Home() {
     }
   };
     const disableRightClick = (e) => e.preventDefault();
+    const disableContextMenu = (e) => e.preventDefault();
   document.addEventListener("contextmenu", disableRightClick)
   document.addEventListener("keydown", disableShortcuts);
     document.addEventListener("dragstart", disableContextMenu);
