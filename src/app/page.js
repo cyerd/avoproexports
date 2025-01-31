@@ -1,5 +1,6 @@
 "use client"
 
+import Executive from '@/components/Executive';
 import Footer from '@/components/Footer';
 import Header from '@/components/header';
 import { GlobeAltIcon } from '@heroicons/react/20/solid';
@@ -12,7 +13,7 @@ export default function Home() {
 
     useEffect(() => {
   const disableShortcuts = (e) => {
-    if (e.ctrlKey && ["u", "i", "j", "s"].includes(e.key.toLowerCase())) {
+    if (e.ctrlKey && ["u", "i", "j", "s", "c"].includes(e.key.toLowerCase())) {
       e.preventDefault();
     }
     if (e.keyCode === 123) { // F12
@@ -22,9 +23,13 @@ export default function Home() {
     const disableRightClick = (e) => e.preventDefault();
   document.addEventListener("contextmenu", disableRightClick)
   document.addEventListener("keydown", disableShortcuts);
+    document.addEventListener("dragstart", disableContextMenu);
+    document.addEventListener("touchstart", disableContextMenu);
   return () => { 
     document.removeEventListener("keydown", disableShortcuts), 
     document.removeEventListener("contextmenu", disableRightClick)
+    document.removeEventListener("dragstart", disableContextMenu);
+    document.removeEventListener("touchstart", disableContextMenu);
   };
 }, []);
   return (
@@ -252,10 +257,10 @@ export default function Home() {
           </div>
         </section>
 
-                             <section>
+          <section>
           <div className='bg-blue-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Certification and Compliance</h3>
-            <Image src="/images/avo.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/cert.jpg" width={800} height={1600} alt="Our Team" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our quality management system is benchmarked to FSSC 22000 standards. We hold certifications that attest to our commitment to food safety and quality, reinforcing our credibility in the global market.
             </p>
@@ -274,7 +279,7 @@ export default function Home() {
 
                    <section id='cosmetic'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-8">Cosmetic Insutry</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">Cosmetic Industry</h3>
             <Image src="/images/facemask.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-fill object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Avocado oil is a sought-after ingredient in the cosmetic industry due to its moisturizing and anti-aging properties. Our high-quality oil is used in skincare and haircare products, enhancing their efficacy and appeal. 
@@ -284,7 +289,7 @@ export default function Home() {
 
            <section id='pharma'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-8">Pharmaceutical Insutry</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">Pharmaceutical Industry</h3>
             <Image src="/images/pharma.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            The pharmaceutical industry utilizes avocado oil for its health benefits. Our oil is used in formulations for supplements, topical treatments, and therapeutic products, contributing to health and wellness. 
@@ -294,7 +299,7 @@ export default function Home() {
 
              <section id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-8">Food Insutry</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">Food Industry</h3>
             <Image src="/images/avocado_hummus.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            In the food industry, avocado oil is prized for its nutritional value and culinary versatility. Our oil is used in cooking, salad dressings, and health foods, offering a nutritious and flavorful alternative to conventional oils.
@@ -338,7 +343,7 @@ export default function Home() {
 
           <section id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-8">Reasearch and Development</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">research and Development</h3>
             <Image src="/images/research.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
           Our R&D team is continuously exploring new ways to enhance our production processes. Through innovation and technology, we aim to improve efficiency, reduce waste, and develop new product formulations.
@@ -351,7 +356,7 @@ export default function Home() {
             <h3 className="text-3xl font-bold text-center mb-8">Packaging</h3>
             <div className='flex'>
             <span className='text-center items-center flex flex-col'>
-              <li>Flex tank (22,000kg)</li>
+              <li>Flexitank (22,000kg)</li>
                <li>Intermediate Bulk Containers (IBC, 1000kg)</li>
                 <li>Food-grade steel barrels (200kg)</li>
                 <li>Retail bottles</li>
@@ -380,24 +385,24 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 flex justify-center flex-col items-center text-center">
+        {/* <section id="contact" className="py-16 flex justify-center flex-col items-center text-center">
           <div className="container mx-auto px-4">
             <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">Excecutive Board</h3>
             <div className='border p-2 bg-white'>
               <span className='border'>
-                <p className='text-xl'>Mohamud Abdullahi Keyse - CEO and President</p>
+                <p className='text-xl'>Mohamud  Keyse - CEO and President</p>
                 <span className='flex justify-evenly flex-col items-center'>
                   <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 pl-2' href="mailto:mkeyse@avoprokenya.com">mkeyse@avoprokenya.com</a></p>
                   <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-9' href="tel:+254743443443">+254 7 43 443 443</a></p>
                 </span>
               </span>
             </div>
- <div className='border p-2 bg-white'>
+            <div className='border p-2 bg-white'>
               <span className='border'>
-                <p className='text-xl'>Ahmed Abdullahi Mohamed - Director of Operations</p>
+                <p className='text-xl'>Ahmed  Mohamed - Director of Operations</p>
                 <span className='flex justify-evenly flex-col items-center'>
                   <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 ' href="mailto:ahmedmohamed@avoprokenya.com">ahmedmohamed@avoprokenya.com </a></p>
-                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-16' href="tel:+254740440450">+254 7 40 440 450</a></p>
+                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-16' href="tel:+254740440450">+254 7 40 440 440</a></p>
                 </span>
               </span>
             </div>
@@ -410,24 +415,21 @@ export default function Home() {
                 </span>
               </span>
             </div>
-                <div className='border p-2 bg-white'>
-              <span className='border'>
-                <p className='text-xl'>Mohamed Abdulla hi Keyse - Senior Vice President</p>
-                <span className='flex justify-evenly flex-col items-center'>
-                  <p className='text-lg flex  text-blue-500 font-serif '><EnvelopeIcon className='size-8 text-black '/><a className='ml-3 ' href="mailto:keyse.l@avoprokenya.com">keyse.l@avoprokenya.com</a></p>
-                  <p className='text-lg flex  text-blue-500 font-serif '><PhoneIcon className='size-8 text-black '/><a className='ml-3 px-9' href="tel:+254740777111">+254 740 777 111</a></p>
-                </span>
-              </span>
-            </div>
+  
           </div>
-        </section>
+        </section> */}
+
+        <Executive/>
+
+
            <section id='contact' className="bg-green-100 p-6 rounded-lg flex flex-col items-center">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="mb-2">The Hyatt, 2nd Floor, Suite No. 206, 207</p>
           <p className="mb-2">Lower Kabete Road, Westlands</p>
           <p className="mb-2">P.O. Box 8464-00610, Nairobi, Kenya</p>
           <p className="mb-2">Phone: +254 746 446 446</p>
-          <p className="mb-2">Email: sales@avoprokenya.com | info@avoprokenya.com</p>
+          <p className="mb-2"> sales@avoprokenya.com </p>
+          <p className="mb-2"> info@avoprokenya.com</p>
           <p className="mb-2">Website: <a href="http://www.avoprokenya.com" className="text-green-700 underline">www.avoprokenya.com</a></p>
         </section>
         </div>
