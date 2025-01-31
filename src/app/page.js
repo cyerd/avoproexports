@@ -182,7 +182,7 @@ export default function Home() {
                            <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Market Leadership</h3>
-            <Image src="/images/market.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/production.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
             We aim to expand our market presence globally, establishing Avopro EPZ Ltd as a household name in the avocado oil industry. Our strategic partnerships and customer-centric approach help us meet the evolving demands of the market.
             </p>
@@ -379,7 +379,7 @@ export default function Home() {
                   <section id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Sustainability</h3>
-            <Image src="/images/research.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/avocado-products.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
           As a business, we appreciate that natural resources are limited, and we consider future generations in all our decisions. Adoption of organic agriculture for our contracted farmers is one such decision. 
             </p>
@@ -432,7 +432,7 @@ export default function Home() {
           <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a className='text-blue-500 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
           <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
           <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
-          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a href="http://wa.me/+254746446446" className="text-blue-500 px-2 underline">Chat With Us on Whatsapp</a></p>
+          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a target="_blank" href="http://wa.me/+254746446446" className="text-blue-500 px-2 underline">Chat With Us on Whatsapp</a></p>
           <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a href="http://www.avoprokenya.com" className="text-blue-500 px-2 underline">www.avoprokenya.com</a></p>
         </section>
         </div>
