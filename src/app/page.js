@@ -4,7 +4,7 @@ import Executive from '@/components/Executive';
 import Footer from '@/components/Footer';
 import Header from '@/components/header';
 import { GlobeAltIcon } from '@heroicons/react/20/solid';
-import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { ChatBubbleBottomCenterIcon, ChatBubbleBottomCenterTextIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useEffect } from 'react';
@@ -356,7 +356,7 @@ export default function Home() {
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Packaging</h3>
             <div className='flex'>
-            <span className='text-center items-center flex flex-col'>
+            <span className='text-left items-center flex flex-col px-2'>
               <li>Flexitank (22,000kg)</li>
                <li>Intermediate Bulk Containers (IBC, 1000kg)</li>
                 <li>Food-grade steel barrels (200kg)</li>
@@ -423,15 +423,16 @@ export default function Home() {
         <Executive/>
 
 
-           <section id='contact' className="bg-green-100 p-6 rounded-lg flex flex-col items-center">
+           <section id='contact' className="bg-green-200 p-6 text-black rounded-lg flex flex-col items-center">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="mb-2">The Hyatt, 2nd Floor, Suite No. 206, 207</p>
           <p className="mb-2">Lower Kabete Road, Westlands</p>
           <p className="mb-2">P.O. Box 8464-00610, Nairobi, Kenya</p>
-          <p className="mb-2">Phone: +254 746 446 446</p>
-          <p className="mb-2"> sales@avoprokenya.com </p>
-          <p className="mb-2"> info@avoprokenya.com</p>
-          <p className="mb-2">Website: <a href="http://www.avoprokenya.com" className="text-green-700 underline">www.avoprokenya.com</a></p>
+          <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a className='text-blue-500 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
+          <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
+          <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
+          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a href="http://www.wa.me/254746446446" className="text-blue-500 px-2 underline">Chat With Us Whatsapp</a></p>
+          <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a href="http://www.avoprokenya.com" className="text-blue-500 px-2 underline">www.avoprokenya.com</a></p>
         </section>
         </div>
       </main>
