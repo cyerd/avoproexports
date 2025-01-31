@@ -262,7 +262,7 @@ export default function Home() {
           <section>
           <div className='bg-blue-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Certification and Compliance</h3>
-            <Image src="/images/GACC.png" width={800} height={1600} alt="Avopro Epz LTD" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/GACC.png" width={800} height={600} alt="Avopro Epz LTD" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our quality management system is benchmarked to FSSC 22000 standards. We hold certifications that attest to our commitment to food safety and quality, reinforcing our credibility in the global market.
             </p>
