@@ -136,7 +136,7 @@ export default function Home() {
           <section id='team'>
           <div className='bg-green-100 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Our Team</h3>
-            <Image src="/images/team.jpg" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/team.jpg" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
               Our team comprises industry experts with extensive experience in agricultural practices, oil extraction, quality control, and market dynamics. This collective expertise drives our mission to produce superior avocado oil while fostering an inclusive and empowering work environment.
             </p>
@@ -145,7 +145,7 @@ export default function Home() {
           <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Social Responsibility</h3>
-            <Image src="/images/social_responsibility.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/social_responsibility.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
              We believe in giving back to the community. Our social responsibility initiatives include supporting local education, healthcare and infrastructure projects. We actively participate in community development programs, ensuring that our growth translates into broader societal benefits. 
             </p>
@@ -155,7 +155,7 @@ export default function Home() {
                   <section>
           <div className='bg-green-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Environmental Stewardship</h3>
-            <Image src="/images/avoteam.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/avoteam.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
              Environmental sustainability is at the core of our operations. From sustainable farming practices to eco-friendly processing methods, we strive to minimize our environmental footprint and promote the conservation of natural resources. 
             </p>
@@ -164,7 +164,7 @@ export default function Home() {
                  <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Economic Employment</h3>
-            <Image src="/images/employees.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/employees.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
              We aim to economically empower our farmers and employees through fair trade practices, competitive wages, and continuous capacity-building programs. By creating a stable and profitable market for avocados, we contribute to the economic upliftment of our community.
             </p>
@@ -173,7 +173,7 @@ export default function Home() {
                    <section id='innovations'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Innovation and Excellence</h3>
-            <Image src="/images/innovation.jpg" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/innovation.jpg" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
              Innovation drives our business. We continuously invest in research and development to improve our extraction processes, enhance product quality, and explore applications for avocado oil. Our quest for excellence ensures that we remain at the forefront of industry advancements
             </p>
@@ -182,7 +182,7 @@ export default function Home() {
                            <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Market Leadership</h3>
-            <Image src="/images/production.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/production.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
             We aim to expand our market presence globally, establishing Avopro EPZ Ltd as a household name in the avocado oil industry. Our strategic partnerships and customer-centric approach help us meet the evolving demands of the market.
             </p>
@@ -192,7 +192,7 @@ export default function Home() {
                              <section>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Raw Material Sourcing</h3>
-            <Image src="/images/avoteam3.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-bottom rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/avoteam3.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-bottom rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Over %80 of our raw materials is sourced from hundreds of contracted small-scale farmers, with the rest coming from large-scale farmers and prequalified independent suppliers. We provide technical advice to our contracted farmers to help them meet the quality and food standards required for our markets and to maximize their production. 
             </p>
@@ -202,7 +202,7 @@ export default function Home() {
           <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Sustainable Farming Practices</h3>
-            <Image src="/images/fieldprunning.png" width={600} height={300} alt="Our Team" className="max-h-52 object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/fieldprunning.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            We promote sustainable farming practices among our farmers, ensuring that our avocado sourcing does not harm the environment. By offering training and resources, we help farmers adopt eco-friendly practices that enhance yield and preserve the ecosystem. 
             </p>
@@ -212,7 +212,7 @@ export default function Home() {
            <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Farmers support Programs</h3>
-            <Image src="/images/fieldtraining.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/fieldtraining.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our support extends beyond technical advice. We provide farmers with financial assistance, access to high-quality seedlings, and market information. This holistic approach ensures that our farmers are well-equipped to produce the best avocados. 
             </p>
@@ -222,7 +222,7 @@ export default function Home() {
              <section>
           <div className='bg-green-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Community Development</h3>
-            <Image src="/images/factory.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/factory.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our collaboration with smallholder farmers fosters community development. By improving agricultural practices and increasing income levels, we contribute to the socio-economic growth of farming communities.
             </p>
@@ -242,7 +242,7 @@ export default function Home() {
                      <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Quality Assuarance</h3>
-            <Image src="/images/avoteam2.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/avoteam2.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our quality assurance processes are designed to meet the highest industry standards. We conduct regular audits, implement stringent controls, and continuously monitor our operations to ensure product safety and quality.
             </p>
@@ -252,7 +252,7 @@ export default function Home() {
                      <section>
           <div className='bg-orange-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Continous Improvements</h3>
-            <Image src="/images/storage-room.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/storage-room.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            We believe in continuous improvement. Our quality management team is dedicated to identifying areas for enhancement and implementing best practice to maintain our reputation for excellence.
             </p>
@@ -262,7 +262,7 @@ export default function Home() {
           <section>
           <div className='bg-blue-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Certification and Compliance</h3>
-            <Image src="/images/GACC.png" width={800} height={1600} alt="Our Team" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/GACC.png" width={800} height={1600} alt="Avopro Epz LTD" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our quality management system is benchmarked to FSSC 22000 standards. We hold certifications that attest to our commitment to food safety and quality, reinforcing our credibility in the global market.
             </p>
@@ -282,7 +282,7 @@ export default function Home() {
                    <section id='cosmetic'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Cosmetic Industry</h3>
-            <Image src="/images/facemask.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-fill object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/facemask.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-fill object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Avocado oil is a sought-after ingredient in the cosmetic industry due to its moisturizing and anti-aging properties. Our high-quality oil is used in skincare and haircare products, enhancing their efficacy and appeal. 
             </p>
@@ -292,7 +292,7 @@ export default function Home() {
            <section id='pharma'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Pharmaceutical Industry</h3>
-            <Image src="/images/pharma.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/pharma.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            The pharmaceutical industry utilizes avocado oil for its health benefits. Our oil is used in formulations for supplements, topical treatments, and therapeutic products, contributing to health and wellness. 
             </p>
@@ -302,7 +302,7 @@ export default function Home() {
              <section id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Food Industry</h3>
-            <Image src="/images/avocado_hummus.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/avocado_hummus.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            In the food industry, avocado oil is prized for its nutritional value and culinary versatility. Our oil is used in cooking, salad dressings, and health foods, offering a nutritious and flavorful alternative to conventional oils.
             </p>
@@ -326,7 +326,7 @@ export default function Home() {
                      <section id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Cold Press Method</h3>
-            <Image src="/images/cold-press.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/cold-press.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            The cold press method is a gentle extraction process that preserves the nutritional integrity and natural flavor of the avocado oil. This method ensures that our oil retains its health benefits, making it suitable for a variety of applications. 
             </p>
@@ -336,7 +336,7 @@ export default function Home() {
                           <section id='range'>
           <div className='bg-green-100 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Product Range</h3>
-            <Image src="/images/allpackaging.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/allpackaging.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            We offer both organic and conventional avocado oil, available as extra-virgin or crude. Our products cater to diverse market needs, from health-conscious consumers to industrial applications.
             </p>
@@ -346,7 +346,7 @@ export default function Home() {
           <section id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">research and Development</h3>
-            <Image src="/images/research.jpg" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/research.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
           Our R&D team is continuously exploring new ways to enhance our production processes. Through innovation and technology, we aim to improve efficiency, reduce waste, and develop new product formulations.
             </p>
@@ -363,7 +363,7 @@ export default function Home() {
                 <li>Food-grade steel barrels (200kg)</li>
                 <li>Retail bottles</li>
             </span>
-            <Image src="/images/storagetypes.png" width={200} height={200} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/storagetypes.png" width={200} height={200} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
            </div>
            <h3 className="text-3xl font-bold text-center my-2 ">Custom Packaging</h3>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-2">
@@ -379,7 +379,7 @@ export default function Home() {
                   <section id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Sustainability</h3>
-            <Image src="/images/avocado-products.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/avocado-products.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
           As a business, we appreciate that natural resources are limited, and we consider future generations in all our decisions. Adoption of organic agriculture for our contracted farmers is one such decision. 
             </p>
