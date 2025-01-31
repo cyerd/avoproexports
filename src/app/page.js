@@ -309,17 +309,17 @@ export default function Home() {
           </div>
         </section>
 
-          <section className="relative">
+          <section className="relative ">
           <Image
           width={1920}
           height={500}
             src="/images/process.png" 
             alt="Wide image of avocado oil" 
-            className="w-full h-[400px] object-cover"
+            className="w-full h-[500px] object-cover "
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center">
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 p-10 text-white text-center">
             <h2 className="text-5xl font-extrabold mb-4 font-serif">PROUDUCTION</h2>
-            <p className="text-2xl font-serif">Once the hand-picked mature avocados are delivered to the factory, they are naturally ripened. The avocado oil is mechanically extracted from the ripened fruits using the cold press method, ensuring the retention of all essential nutrients. Our extraction process is completely chemical and additive-free.</p>
+            <p className="text-2xl font-serif ">Once the hand-picked mature avocados are delivered to the factory, they are naturally ripened. The avocado oil is mechanically extracted from the ripened fruits using the cold press method, ensuring the retention of all essential nutrients. Our extraction process is completely chemical and additive-free.</p>
           </div>
         </section>
 
