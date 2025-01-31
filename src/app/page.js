@@ -4,8 +4,7 @@ import Executive from '@/components/Executive';
 import Footer from '@/components/Footer';
 import Header from '@/components/header';
 import { GlobeAltIcon } from '@heroicons/react/20/solid';
-import { ChatBubbleBottomCenterIcon, ChatBubbleBottomCenterTextIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
-import Head from 'next/head';
+import {  ChatBubbleBottomCenterTextIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { useEffect } from 'react';
 
@@ -48,7 +47,7 @@ export default function Home() {
           height={500}
             src="/images/bgbanner.png" 
             alt="Wide image of avocado oil" 
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[300px] object-cover"
           />
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center">
             <h2 className="text-5xl font-extrabold mb-4 font-serif">Pure Premium Avocado Oil</h2>
@@ -59,14 +58,14 @@ export default function Home() {
         {/* Features Section */}
         <section id="features" className="py-16">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-center font-serif  text-black mb-8">Our Products</h3>
+            <h1 className="text-3xl font-bold text-center font-serif  text-black mb-8">Our Products</h1>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="bg-white flex p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/EXTRA_VIRGIN1.png" width={200} height={200} alt='extra virgin oil'  style={{ 
-    maxHeight: 300, 
-    objectFit: 'contain', 
-    objectPosition: '0% 80%' 
-  }}  />
+                    maxHeight: 300, 
+                    objectFit: 'contain', 
+                    objectPosition: '0% 80%' 
+                  }}  />
                 <span>
                 <h4 className="text-xl font-bold font-serif  text-black mb-2">AVOCADO EXTRA VIRGIN OIL</h4>
                 <p className="text-black font-serif  text-black border rounded-lg p-5 border rounded-lg bg-gray-50 mt-5">Our Avocado Extra Virgin Oil is produced using the cold press method to ensure the highest quality. Rich in vitamins and antioxidants, this oil is ideal for culinary use and cosmetic applications.</p>
@@ -74,10 +73,10 @@ export default function Home() {
               </div>
                          <div className="bg-white flex p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/ORGANIC1.png" width={200} height={200} alt='extra virgin oil'  style={{ 
-    maxHeight: 300, 
-    objectFit: 'contain', 
-    objectPosition: '0% 80%' 
-  }}  />
+                    maxHeight: 300, 
+                    objectFit: 'contain', 
+                    objectPosition: '0% 80%' 
+                  }}  />
                 <span>
                 <h4 className="text-xl font-bold font-serif  text-black mb-2">AVOCADO ORGANIC OIL</h4>
                 <p className="text-black font-serif  text-black border rounded-lg p-5 border rounded-lg bg-gray-50 mt-5">Certified organic, our Avocado Organic Oil is free from pesticides and synthetic fertilizers. It retains all the natural goodness of avocados, making it perfect for health-conscious consumers. </p>
@@ -99,7 +98,7 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="bg-gray-200 py-16">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">About Us</h3>
+            <h1 className="text-3xl font-bold text-center font-serif  text-black  mb-8">About Us</h1>
             <p className="text-center text-black max-w-2xl mx-auto font-serif">
               Avopro EPZ Ltd is a premier company registered and domiciled in Kenya, specializing in the extraction and marketing of high-quality avocado oil. We pride ourselves on utilizing state-of-the-art processing machinery, and employing a well-trained, highly motivated team. Our operations are governed by stringent international quality management systems. We have a robust smallholder farmers’ program that guarantees a consistent and sustainable supply of avocados, reinforcing our commitment to community and environmental stewardship. 
             </p>
@@ -144,7 +143,7 @@ export default function Home() {
         </section>
           <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-8">Social Responsibility</h3>
+            <h1 className="text-3xl font-bold text-center mb-8">Social Responsibility</h1>
             <Image src="/images/social_responsibility.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
              We believe in giving back to the community. Our social responsibility initiatives include supporting local education, healthcare and infrastructure projects. We actively participate in community development programs, ensuring that our growth translates into broader societal benefits. 
@@ -230,9 +229,9 @@ export default function Home() {
         </section>
 
         <span className='flex flex-col text-black font-serif p-5'>
-          <h3 className='font-bold text-3xl p-5'>
+          <h1 className='font-bold text-3xl p-5'>
             Quality Management System
-          </h3>
+          </h1>
           <p>
             We maintain a rigorous quality management system that complies with both local and international food safety standards. Excellence drives our business, and we ensure it is ingrained in our culture.
 </p>
@@ -271,7 +270,7 @@ export default function Home() {
 
            <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-2">Target Market</h3>
+            <h1 className="text-3xl font-bold text-center mb-2">Target Market</h1>
             
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our target markets include the cosmetic, pharmaceutical, and food industries.
@@ -429,11 +428,11 @@ export default function Home() {
           <p className="mb-2">The Hyatt, 2nd Floor, Suite No. 206, 207</p>
           <p className="mb-2">Lower Kabete Road, Westlands</p>
           <p className="mb-2">P.O. Box 8464-00610, Nairobi, Kenya</p>
-          <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a className='text-blue-500 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
-          <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
-          <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
+          <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a  className='text-blue-500 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
+          <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a  className='px-2 text-blue-500' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
+          <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a target="_blank" className='px-2 text-blue-500' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
           <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a target="_blank" href="http://wa.me/+254746446446" className="text-blue-500 px-2 underline">Chat With Us on Whatsapp</a></p>
-          <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a href="http://www.avoprokenya.com" className="text-blue-500 px-2 underline">www.avoprokenya.com</a></p>
+          <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a target="_blank" href="http://avoprokenya.com" className="text-blue-500 px-2 underline">www.avoprokenya.com</a></p>
         </section>
         </div>
       </main>
