@@ -67,7 +67,7 @@ export default function Header() {
         <div className="flex items-center lg:flex-1">
           
           <img
-              alt=""
+              alt="AVOPRO EPZ LTD"
               src="./avopro expo/avofruit.png"
               className="h-12 w-auto"
             />          
@@ -159,7 +159,7 @@ export default function Header() {
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">AVOPRO EPZ LTD</span>
               <img
-                alt=""
+                alt="AVOPRO EPZ LTD"
                 src="./avopro expo/avofruit.png"
                 className="h-8 w-auto"
               />

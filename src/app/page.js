@@ -7,6 +7,7 @@ import { GlobeAltIcon } from '@heroicons/react/20/solid';
 import {  ChatBubbleBottomCenterTextIcon, EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
 import Image from 'next/image';
 import { useEffect } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
 
@@ -58,7 +59,7 @@ export default function Home() {
         {/* Features Section */}
         <section id="features" className="py-16">
           <div className="container mx-auto px-4">
-            <h1 className="text-3xl font-bold text-center font-serif  text-black mb-8">Our Products</h1>
+            <h2 className="text-3xl font-bold text-center font-serif  text-black mb-8">Our Products</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               <div className="bg-white flex p-6 rounded-lg shadow-md text-center">
                 <Image src="/images/EXTRA_VIRGIN1.png" width={200} height={200} alt='extra virgin oil'  style={{ 
@@ -143,7 +144,7 @@ export default function Home() {
         </section>
           <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h1 className="text-3xl font-bold text-center mb-8">Social Responsibility</h1>
+            <h2 className="text-3xl font-bold text-center mb-8">Social Responsibility</h2>
             <Image src="/images/social_responsibility.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
              We believe in giving back to the community. Our social responsibility initiatives include supporting local education, healthcare and infrastructure projects. We actively participate in community development programs, ensuring that our growth translates into broader societal benefits. 
@@ -229,9 +230,9 @@ export default function Home() {
         </section>
 
         <span className='flex flex-col text-black font-serif p-5'>
-          <h1 className='font-bold text-3xl p-5'>
+          <h2 className='font-bold text-3xl p-5'>
             Quality Management System
-          </h1>
+          </h2>
           <p>
             We maintain a rigorous quality management system that complies with both local and international food safety standards. Excellence drives our business, and we ensure it is ingrained in our culture.
 </p>
@@ -270,7 +271,7 @@ export default function Home() {
 
            <section>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h1 className="text-3xl font-bold text-center mb-2">Target Market</h1>
+            <h2 className="text-3xl font-bold text-center mb-2">Target Market</h2>
             
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our target markets include the cosmetic, pharmaceutical, and food industries.
