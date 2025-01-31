@@ -13,13 +13,14 @@ export default function Home() {
 
     useEffect(() => {
   const disableShortcuts = (e) => {
-    if (e.ctrlKey && ["u", "i", "j", "s", "c"].includes(e.key.toLowerCase())) {
+    if (e.ctrlKey && ["u", "i", "j", "s", "c", "p"].includes(e.key.toLowerCase())) {
       e.preventDefault();
     }
     if (e.keyCode === 123) { // F12
       e.preventDefault();
     }
   };
+  
     const disableRightClick = (e) => e.preventDefault();
     const disableContextMenu = (e) => e.preventDefault();
   document.addEventListener("contextmenu", disableRightClick)
@@ -251,7 +252,7 @@ export default function Home() {
                      <section>
           <div className='bg-orange-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Continous Improvements</h3>
-            <Image src="/images/avo.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/storage-room.png" width={800} height={600} alt="Our Team" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            We believe in continuous improvement. Our quality management team is dedicated to identifying areas for enhancement and implementing best practice to maintain our reputation for excellence.
             </p>
@@ -261,7 +262,7 @@ export default function Home() {
           <section>
           <div className='bg-blue-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Certification and Compliance</h3>
-            <Image src="/images/cert.jpg" width={800} height={1600} alt="Our Team" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/GACC.png" width={800} height={1600} alt="Our Team" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            Our quality management system is benchmarked to FSSC 22000 standards. We hold certifications that attest to our commitment to food safety and quality, reinforcing our credibility in the global market.
             </p>
@@ -312,7 +313,7 @@ export default function Home() {
           <Image
           width={1920}
           height={500}
-            src="/images/production.png" 
+            src="/images/process.png" 
             alt="Wide image of avocado oil" 
             className="w-full h-[400px] object-cover"
           />
