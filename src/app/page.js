@@ -431,7 +431,7 @@ export default function Home() {
           <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a className='text-blue-500 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
           <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
           <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a className='px-2 text-blue-500' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
-          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a href="http://www.wa.me/254746446446" className="text-blue-500 px-2 underline">Chat With Us Whatsapp</a></p>
+          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a href="http://wa.me/+254746446446" className="text-blue-500 px-2 underline">Chat With Us on Whatsapp</a></p>
           <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a href="http://www.avoprokenya.com" className="text-blue-500 px-2 underline">www.avoprokenya.com</a></p>
         </section>
         </div>
