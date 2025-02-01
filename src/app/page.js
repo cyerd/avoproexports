@@ -24,20 +24,20 @@ export default function Home() {
   
     const disableRightClick = (e) => e.preventDefault();
     const disableContextMenu = (e) => e.preventDefault();
-  document.addEventListener("contextmenu", disableRightClick)
+  // document.addEventListener("contextmenu", disableRightClick)
   document.addEventListener("keydown", disableShortcuts);
     document.addEventListener("dragstart", disableContextMenu);
     document.addEventListener("touchstart", disableContextMenu);
   return () => { 
     document.removeEventListener("keydown", disableShortcuts), 
-    document.removeEventListener("contextmenu", disableRightClick)
+    // document.removeEventListener("contextmenu", disableRightClick)
     document.removeEventListener("dragstart", disableContextMenu);
     document.removeEventListener("touchstart", disableContextMenu);
   };
 }, []);
   return (
     <div className="bg-gray-100 min-h-screen">
-     <div className=''><GoogleTranslate /></div>
+     <div className='p-2 mt-2'><GoogleTranslate /></div>
 
       <Header/>
        
@@ -322,8 +322,8 @@ export default function Home() {
             alt="Wide image of avocado oil" 
             className="w-full h-[500px] object-cover "
           />
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 p-10 text-white text-center">
-            <h2 className="text-5xl font-extrabold mb-4 font-serif">PROUDUCTION</h2>
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 p-5 text-white text-center">
+            <h2 className="text-3xl font-extrabold mb-4 font-serif">PRODUCTION</h2>
             <p className="text-2xl font-serif ">Once the hand-picked mature avocados are delivered to the factory, they are naturally ripened. The avocado oil is mechanically extracted from the ripened fruits using the cold press method, ensuring the retention of all essential nutrients. Our extraction process is completely chemical and additive-free.</p>
           </div>
         </section>
@@ -331,7 +331,7 @@ export default function Home() {
                      <section id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Cold Press Method</h3>
-            <Image src="/images/cold-press.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/cold-press.jpg" width={1200} height={1200} alt="Avopro Epz LTD" className=" lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            The cold press method is a gentle extraction process that preserves the nutritional integrity and natural flavor of the avocado oil. This method ensures that our oil retains its health benefits, making it suitable for a variety of applications. 
             </p>
@@ -350,7 +350,7 @@ export default function Home() {
 
           <section id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
-            <h3 className="text-3xl font-bold text-center mb-8">research and Development</h3>
+            <h3 className="text-3xl font-bold text-center mb-8">Research and Development</h3>
             <Image src="/images/research.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
           Our R&D team is continuously exploring new ways to enhance our production processes. Through innovation and technology, we aim to improve efficiency, reduce waste, and develop new product formulations.
