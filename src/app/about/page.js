@@ -1,3 +1,6 @@
+"use client"
+
+import GoogleTranslate from '@/components/GoogleTranslate'
 import React from 'react'
 
 function page() {
@@ -5,6 +8,7 @@ function page() {
 
  
     <div className="bg-gray-100 min-h-screen py-8 px-4">
+      <GoogleTranslate />
       <div className="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-8">
         <h1 className="text-4xl font-bold text-green-600 mb-4">Avopro EPZ Ltd</h1>
         <p className="text-lg text-gray-700 mb-6">

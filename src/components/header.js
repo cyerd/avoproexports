@@ -19,6 +19,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 import Image from 'next/image'
+import GoogleTranslate from './GoogleTranslate'
 
 const products = [
   { 
@@ -62,6 +63,8 @@ export default function Header() {
 
   return (
     <header className="bg-white sticky top-0 z-50">
+      
+      
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
         <a href="/" className="-m-1.5 p-1.5">
         <div className="flex items-center lg:flex-1">

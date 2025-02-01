@@ -8,6 +8,7 @@ import {  ChatBubbleBottomCenterTextIcon, EnvelopeIcon, PhoneIcon } from '@heroi
 import Image from 'next/image';
 import { useEffect } from 'react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import GoogleTranslate from '@/components/GoogleTranslate';
 
 export default function Home() {
 
@@ -36,13 +37,16 @@ export default function Home() {
 }, []);
   return (
     <div className="bg-gray-100 min-h-screen">
-     
+     <div className=''><GoogleTranslate /></div>
 
       <Header/>
+       
 
       <main>
         {/* Hero Section */}
+        
         <section className="relative">
+          
           <Image
           width={1920}
           height={500}
@@ -50,6 +54,7 @@ export default function Home() {
             alt="Wide image of avocado oil" 
             className="w-full h-[300px] object-cover"
           />
+         
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center">
             <h2 className="text-5xl font-extrabold mb-4 font-serif">Pure Premium Avocado Oil</h2>
             <p className="text-2xl font-serif">Crafted for Global Excellence</p>
