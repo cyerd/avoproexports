@@ -37,7 +37,7 @@ export default function Home() {
 }, []);
   return (
     <div className="bg-gray-100 min-h-screen">
-     <div className='p-2 mt-2'><GoogleTranslate /></div>
+     <div className='p-10 mt-2'><GoogleTranslate /></div>
 
       <Header/>
        
