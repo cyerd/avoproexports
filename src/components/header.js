@@ -69,10 +69,12 @@ export default function Header() {
         <a href="/" className="-m-1.5 p-1.5">
         <div className="flex items-center lg:flex-1">
           
-          <img
+          <Image
               alt="AVOPRO EPZ LTD"
-              src="./avopro expo/avofruit.png"
-              className="h-12 w-auto"
+              src="/images/avofruit.png"
+              // className="h-12 w-auto"
+              width={64}
+              height={64}
             />          
             
           
@@ -107,7 +109,7 @@ export default function Header() {
                     key={item.name}
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
                   >
-                    <div key={item.name} className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                    <div key={item.name} className="flex  flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                         <Image
                             src={item.icon} // Ensure this path is correct
                             alt="Fresh Avocado"
@@ -163,7 +165,7 @@ export default function Header() {
               <span className="sr-only">AVOPRO EPZ LTD</span>
               <img
                 alt="AVOPRO EPZ LTD"
-                src="./avopro expo/avofruit.png"
+                src="/images/avofruit.png"
                 className="h-8 w-auto"
               />
             </a>

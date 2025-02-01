@@ -37,7 +37,50 @@ export default function Home() {
 }, []);
   return (
     <div className="bg-gray-100 min-h-screen">
-     <div className='p-10 mt-2'><GoogleTranslate /></div>
+     <GoogleTranslate
+        id="google_translate_element"
+        className="bg-white border border-gray-300 p-2 rounded shadow-lg"
+        style={{
+          minWidth: "200px",
+          maxWidth: "300px",
+          zIndex: 9999,
+          position: "relative",
+        }}
+      />
+
+            {/* Style Fix for Google Translate Popups */}
+      <style jsx global>{`
+        .goog-te-banner-frame {
+          display: none !important;
+        }
+        .goog-te-gadget {
+          font-size: 16px !important;
+        }
+        .goog-te-gadget-simple {
+          background-color: #f8f9fa !important;
+          border: 1px solid #ccc !important;
+          padding: 10px !important;
+          border-radius: 8px;
+          cursor: pointer;
+        }
+        .goog-te-menu-value {
+          font-size: 14px !important;
+          color: #333 !important;
+        }
+        .goog-te-menu-value:hover {
+          color: #007bff !important;
+        }
+        /* Make dropdown visible */
+        .goog-te-menu-frame {
+          z-index: 9999 !important;
+          position: absolute !important;
+          top: 100% !important;
+        }
+        .VIpgJd-ZVi9od-ORHb{
+          display: none !important;
+        }
+      `}</style>
+
 
       <Header/>
        
@@ -45,7 +88,7 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         
-        <section className="relative">
+        <section className="relative shadow-2xl m-2" >
           
           <Image
           width={1920}
@@ -53,6 +96,8 @@ export default function Home() {
             src="/images/bgbanner.png" 
             alt="Wide image of avocado oil" 
             className="w-full h-[300px] object-cover"
+            priority
+       
           />
          
           <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 text-white text-center">
@@ -62,7 +107,7 @@ export default function Home() {
         </section>
 
         {/* Features Section */}
-        <section id="features" className="py-16">
+        <section className=" shadow-2xl m-2" id="features" className="py-16 shadow-2xl">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center font-serif  text-black mb-8">Our Products</h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -99,10 +144,10 @@ export default function Home() {
           </div>
         </section>
 
-        <div className=' lg:p-20 lg:mx-52 rounded-xl border'>
+        <div className=' lg:p-20 lg:mx-52 rounded-xl shadow-2xl'>
 
         {/* About Section */}
-        <section id="about" className="bg-gray-200 py-16">
+        <section className=" shadow-2xl m-2" id="about" className="bg-gray-200 py-16 shadow-2xl">
           <div className="container mx-auto px-4">
             <h1 className="text-3xl font-bold text-center font-serif  text-black  mb-8">About Us</h1>
             <p className="text-center text-black max-w-2xl mx-auto font-serif">
@@ -111,7 +156,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section>
+          <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg'>
             <h3 className="text-3xl font-bold text-center mb-8">Our Journey</h3>
             <p className="text-center text-black max-w-2xl mx-auto font-serif">
@@ -120,7 +165,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
+        <section className=" shadow-2xl m-2">
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg'>
             <h3 className="text-3xl font-bold text-center mb-8">Our Mission</h3>
             <p className="text-center text-black max-w-2xl mx-auto font-serif">
@@ -129,7 +174,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section>
+          <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg'>
             <h3 className="text-3xl font-bold text-center mb-8">Our Vision</h3>
             <p className="text-center text-black max-w-2xl mx-auto font-serif">
@@ -138,7 +183,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section id='team'>
+          <section className=" shadow-2xl m-2" id='team'>
           <div className='bg-green-100 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Our Team</h3>
             <Image src="/images/team.jpg" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -147,7 +192,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-          <section>
+          <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h2 className="text-3xl font-bold text-center mb-8">Social Responsibility</h2>
             <Image src="/images/social_responsibility.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -157,7 +202,7 @@ export default function Home() {
           </div>
         </section>
 
-                  <section>
+                  <section className=" shadow-2xl m-2">
           <div className='bg-green-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Environmental Stewardship</h3>
             <Image src="/images/avoteam.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -166,7 +211,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-                 <section>
+                 <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Economic Employment</h3>
             <Image src="/images/employees.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -175,7 +220,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-                   <section id='innovations'>
+                   <section className=" shadow-2xl m-2" id='innovations'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Innovation and Excellence</h3>
             <Image src="/images/innovation.jpg" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -184,7 +229,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-                           <section>
+                           <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Market Leadership</h3>
             <Image src="/images/production.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -194,7 +239,7 @@ export default function Home() {
           </div>
         </section>
 
-                             <section>
+                             <section className=" shadow-2xl m-2">
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Raw Material Sourcing</h3>
             <Image src="/images/avoteam3.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-bottom rounded-xl shadow-lg border-4 border-white"/>
@@ -204,7 +249,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section>
+          <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Sustainable Farming Practices</h3>
             <Image src="/images/fieldprunning.png" width={600} height={300} alt="Avopro Epz LTD" className="max-h-52 object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
@@ -214,7 +259,7 @@ export default function Home() {
           </div>
         </section>
 
-           <section>
+           <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Farmers support Programs</h3>
             <Image src="/images/fieldtraining.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -224,7 +269,7 @@ export default function Home() {
           </div>
         </section>
 
-             <section>
+             <section className=" shadow-2xl m-2">
           <div className='bg-green-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Community Development</h3>
             <Image src="/images/factory.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -244,7 +289,7 @@ export default function Home() {
          
         </span>
 
-                     <section>
+                     <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Quality Assuarance</h3>
             <Image src="/images/avoteam2.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -254,7 +299,7 @@ export default function Home() {
           </div>
         </section>
         
-                     <section>
+                     <section className=" shadow-2xl m-2">
           <div className='bg-orange-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Continous Improvements</h3>
             <Image src="/images/storage-room.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -264,7 +309,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section>
+          <section className=" shadow-2xl m-2">
           <div className='bg-blue-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Certification and Compliance</h3>
             <Image src="/images/GACC.PNG" width={800} height={600} alt="Avopro Epz LTD" className="  object-cover object-top rounded-xl shadow-lg border-4 border-white"/>
@@ -274,7 +319,7 @@ export default function Home() {
           </div>
         </section>
 
-           <section>
+           <section className=" shadow-2xl m-2">
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h2 className="text-3xl font-bold text-center mb-2">Target Market</h2>
             
@@ -284,7 +329,7 @@ export default function Home() {
           </div>
         </section>
 
-                   <section id='cosmetic'>
+                   <section className=" shadow-2xl m-2" id='cosmetic'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Cosmetic Industry</h3>
             <Image src="/images/facemask.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-fill object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -294,7 +339,7 @@ export default function Home() {
           </div>
         </section>
 
-           <section id='pharma'>
+           <section className=" shadow-2xl m-2" id='pharma'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Pharmaceutical Industry</h3>
             <Image src="/images/pharma.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -304,7 +349,7 @@ export default function Home() {
           </div>
         </section>
 
-             <section id='food'>
+             <section className=" shadow-2xl m-2" id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Food Industry</h3>
             <Image src="/images/avocado_hummus.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -314,7 +359,7 @@ export default function Home() {
           </div>
         </section>
 
-          <section className="relative ">
+          <section className="relative shadow-2xl m-2">
           <Image
           width={1920}
           height={500}
@@ -328,7 +373,7 @@ export default function Home() {
           </div>
         </section>
 
-                     <section id='food'>
+                     <section className=" shadow-2xl m-2" id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Cold Press Method</h3>
             <Image src="/images/cold-press.jpg" width={1200} height={1200} alt="Avopro Epz LTD" className=" lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -338,17 +383,17 @@ export default function Home() {
           </div>
         </section>
 
-                          <section id='range'>
+                          <section className=" shadow-2xl m-2" id='range'>
           <div className='bg-green-100 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Product Range</h3>
-            <Image src="/images/allpackaging.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
+            <Image src="/images/allpackaging.png" width={800} height={800} alt="Avopro Epz LTD" className="object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
             <p className="text-center text-black max-w-2xl mx-auto font-serif  text-black p-5">
            We offer both organic and conventional avocado oil, available as extra-virgin or crude. Our products cater to diverse market needs, from health-conscious consumers to industrial applications.
             </p>
           </div>
         </section>
 
-          <section id='food'>
+          <section className=" shadow-2xl m-2" id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Research and Development</h3>
             <Image src="/images/research.jpg" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -358,16 +403,16 @@ export default function Home() {
           </div>
         </section>
 
-           <section id='food'>
+           <section className=" shadow-2xl m-2" id='food'>
           <div className='bg-gray-200 p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Packaging</h3>
             <div className='flex'>
-            <span className='text-left items-center flex flex-col px-2'>
+            <ul className='text-left items-center flex flex-col px-2 list-item '>
               <li>Flexitank (22,000kg)</li>
                <li>Intermediate Bulk Containers (IBC, 1000kg)</li>
                 <li>Food-grade steel barrels (200kg)</li>
                 <li>Retail bottles</li>
-            </span>
+            </ul>
             <Image src="/images/storagetypes.png" width={200} height={200} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
            </div>
            <h3 className="text-3xl font-bold text-center my-2 ">Custom Packaging</h3>
@@ -381,7 +426,7 @@ export default function Home() {
           </div>
         </section>
 
-                  <section id='food'>
+                  <section className=" shadow-2xl m-2" id='food'>
           <div className='bg-white p-10 text-center items-center text-black font-serif  text-black border rounded-lg flex items-center flex-col'>
             <h3 className="text-3xl font-bold text-center mb-8">Sustainability</h3>
             <Image src="/images/avocado-products.png" width={800} height={600} alt="Avopro Epz LTD" className="max-h-64 lg:max-h-96 object-cover object-center rounded-xl shadow-lg border-4 border-white"/>
@@ -392,7 +437,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        {/* <section id="contact" className="py-16 flex justify-center flex-col items-center text-center">
+        {/* <section className=" shadow-2xl m-2" id="contact" className="py-16 flex justify-center flex-col items-center text-center">
           <div className="container mx-auto px-4">
             <h3 className="text-3xl font-bold text-center font-serif  text-black  mb-8">Excecutive Board</h3>
             <div className='border p-2 bg-white'>
@@ -429,16 +474,16 @@ export default function Home() {
         <Executive/>
 
 
-           <section id='contact' className="bg-green-200 p-6 text-black rounded-lg flex flex-col items-center">
+           <section  id='contact' className="bg-teal-200 p-6 shadow-2xl m-2 text-black rounded-lg flex flex-col items-center shadow-2xl">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="mb-2">The Hyatt, 2nd Floor, Suite No. 206, 207</p>
           <p className="mb-2">Lower Kabete Road, Westlands</p>
           <p className="mb-2">P.O. Box 8464-00610, Nairobi, Kenya</p>
-          <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a  className='text-blue-500 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
-          <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a  className='px-2 text-blue-500' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
-          <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a target="_blank" className='px-2 text-blue-500' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
-          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a target="_blank" href="http://wa.me/+254746446446" className="text-blue-500 px-2 underline">Chat With Us on Whatsapp</a></p>
-          <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a target="_blank" href="http://avoprokenya.com" className="text-blue-500 px-2 underline">www.avoprokenya.com</a></p>
+          <p className="mb-2 flex "><PhoneIcon className='size-6 '/> <a  className='text-blue-800 px-2' href="tel:+254 746 446 446">+254 746 446 446</a></p>
+          <p className="mb-2 flex "><EnvelopeIcon className='size-6 '/><a  className='px-2 text-blue-800' href="mailto:sales@avoprokenya.com"> sales@avoprokenya.com </a> </p>
+          <p className="mb-2 flex "> <EnvelopeIcon className='size-6 '/><a target="_blank" className='px-2 text-blue-800' href="mailto:info@avoprokenya.com"> info@avoprokenya.com </a></p>
+          <p className="mb-2 flex "><ChatBubbleBottomCenterTextIcon className='size-6 '/> <a target="_blank" href="http://wa.me/+254746446446" className="text-blue-800 px-2 underline">Chat With Us on Whatsapp</a></p>
+          <p className="mb-2 flex "><GlobeAltIcon className='size-6 '/> <a target="_blank" href="http://avoprokenya.com" className="text-blue-800 px-2 underline">www.avoprokenya.com</a></p>
         </section>
         </div>
       </main>

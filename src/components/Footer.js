@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div>
-        <footer style={{ backgroundColor: "#333", color: "white", padding: "1rem", textAlign: "center" }}>
+        <footer className='shadow-2xl bg-slate-800 text-white p-5 text-center' >
         <p>© 2025 AVOPRO EPZ LTD. All Rights Reserved.</p>
       </footer>
     </div>

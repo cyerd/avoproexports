@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const people = [
   {
     name: 'Mohamud Keyse',
@@ -42,7 +44,7 @@ export default function Executive() {
           {people.map((person) => (
             <li key={person.name}>
               <div className="flex items-center gap-x-6">
-                <img alt="" src={person.imageUrl} className="size-16 rounded-full" />
+                <Image alt="" src={person.imageUrl} width={32} height={32} className=" rounded-full" />
                 <div>
                   <h3 className="text-base/7 font-semibold tracking-tight text-gray-900">{person.name}</h3>
                   <p className="text-sm/6 font-semibold text-indigo-600">{person.role}</p>

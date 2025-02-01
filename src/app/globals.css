@@ -25,3 +25,30 @@ Image {
     pointer-events: none;
     z-index: 99999;
 }
+
+.goog-te-banner-frame {
+      display: none !important;
+    }
+.goog-te-gadget {
+  font-size: 16px !important;
+}
+.goog-te-gadget-simple {
+  background-color: #f8f9fa !important;
+  border: 1px solid #ccc !important;
+  padding: 10px !important;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.goog-te-menu-value {
+  font-size: 14px !important;
+  color: #333 !important;
+}
+.goog-te-menu-value:hover {
+  color: #007bff !important;
+}
+    /* Make dropdown visible */
+.goog-te-menu-frame {
+  z-index: 9999 !important;
+  position: absolute !important;
+  top: 100% !important;
+}
